@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+.header{
+    height: 60px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    z-index: 100;
+}
+.header a{
+    text-decoration: none;
+}
+.header__logo{
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+    color: #000;
+}
+.header__nav{
+    display: flex;
+}
+.header__nav a{
+    text-decoration: none;
+}
+.header__option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+    color: rgb(0, 0, 0);
+}
+.header__option h1{
+    font-family: 'Roboto';
+font-weight: 900;
+font-size: 31px;
+color: #000000;
+}
+.header__option h1:hover{
+    color: rgb(133, 133, 133);
+}
+.header__logo{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 41px;
+/* color: #000000; */
+}
+.hambuger-menu{
+    display: none;
+}
+
+/* media querie */
+@media screen and (max-width: 400px){
+    .hambuger-menu{
+        display: block;
+    }
+    .header__nav{
+        display: none;
+    }
+    .header__option{
+        display: flex;
+        align-items: center;
+        margin-top: -10px;
+    }
+    .header__navPhone{
+        display:flex;
+        flex-direction: column;
+        position: absolute;
+          height: 13rem;
+          width: 100%;
+           background: linear-gradient(114.4deg, #00E0FF 0%, rgba(54, 213, 234, 0.16) 21.51%, rgba(168, 189, 191, 0) 83.26%);
+          backdrop-filter: blur(20px);
+          /* background: linear-gradient(250.56deg, #FFD600 0%, rgba(255, 233, 119, 0.84) 32.86%, rgba(255, 255, 255, 0) 100%, rgba(168, 189, 191, 0) 100%);
+backdrop-filter: blur(53px); */
+          top: 80px;
+          right: 0%;
+          z-index: 10;
+          transform-origin: top;
+      }
+      .hambuger-menu {
+          margin: 10px;
+
+      }
+
+}
