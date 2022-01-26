@@ -13,7 +13,7 @@ font-weight: 700;
 font-size: 42px;
 line-height: 49px;
 letter-spacing: 0.04em;
-color: #000000;
+color: var(--text-primary);
 margin-bottom: 10px;
 }
 .project__content{
@@ -27,10 +27,13 @@ font-weight: 600;
 font-size: 30px;
 letter-spacing: 0.04em;
 margin-bottom: -10px;
-color: #000000;
+margin-bottom: 10px;
+color: var(--text-secondary);
 }
 .project__content h3{
-    color: rgb(0, 183, 255);
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(39, 39, 39);
 }
 .project__content p{
 font-weight: 600;
@@ -56,11 +59,13 @@ color: #3a3a3a;
         max-width: 300px;
     }
     .project__content h2{
-        font-size: 25px;
+        font-size: 22px;
         letter-spacing: 0em;
+        margin-bottom: 10px;
     }
     .project__content h3{
-        font-size: 18px ;
+        font-size: 15px ;
+        width: 200px;
     }
     .project__content p{
         font-size: 21px;

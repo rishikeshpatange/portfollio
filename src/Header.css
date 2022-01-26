@@ -15,7 +15,10 @@
     object-fit: contain;
     margin: 0 20px;
     margin-top: 18px;
-    color: #000;
+    color: var(--text-primary);
+}
+.form-check{
+    margin-top: 25px;
 }
 .header__nav{
     display: flex;
@@ -28,13 +31,13 @@
     flex-direction: column;
     margin-left: 1.875rem;
     margin-right: 1.875rem;
-    color: rgb(0, 0, 0);
+    margin-top: 20px;
 }
 .header__option h1{
     font-family: 'Roboto';
 font-weight: 900;
 font-size: 31px;
-color: #000000;
+color: var(--text-primary);
 }
 .header__option h1:hover{
     color: rgb(133, 133, 133);
@@ -61,7 +64,7 @@ font-size: 41px;
     .header__option{
         display: flex;
         align-items: center;
-        margin-top: -10px;
+        margin-top: 20px;
     }
     .header__navPhone{
         display:flex;
@@ -69,10 +72,9 @@ font-size: 41px;
         position: absolute;
           height: 13rem;
           width: 100%;
-           background: linear-gradient(114.4deg, #00E0FF 0%, rgba(54, 213, 234, 0.16) 21.51%, rgba(168, 189, 191, 0) 83.26%);
-          backdrop-filter: blur(20px);
-          /* background: linear-gradient(250.56deg, #FFD600 0%, rgba(255, 233, 119, 0.84) 32.86%, rgba(255, 255, 255, 0) 100%, rgba(168, 189, 191, 0) 100%);
-backdrop-filter: blur(53px); */
+           background: linear-gradient(180deg, rgba(255, 255, 255, 0.64) 0%, rgba(255, 250, 250, 0) 100%);
+          backdrop-filter: blur(50px);
+          box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.25);
           top: 80px;
           right: 0%;
           z-index: 10;
@@ -80,7 +82,6 @@ backdrop-filter: blur(53px); */
       }
       .hambuger-menu {
           margin: 10px;
-
       }
 
 }
