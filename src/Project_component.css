@@ -1,0 +1,48 @@
+.project_component{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 10px;
+        padding: 20px;
+        width: 100%;
+        max-height: 350px;
+        max-width: 100%;
+        z-index: 1;
+        font-family: 'Cormorant Garamond', serif;
+}
+.project_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project_info h1{
+    letter-spacing: 2px;
+}
+.project_info p{
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.project_component img{
+    /* width: 100%; */
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: 0.7s;
+}
+.project_component img:hover{
+    transform: translateY(-10px);
+    opacity: 50%;
+}
+@media screen and (max-width: 800px){
+    .project_component img{
+        max-width: 300px;
+        max-height: 400px;
+        object-fit: contain;
+        margin-bottom: 15px;
+        transition: 0.7s;
+    }
+
+}

@@ -5,24 +5,27 @@ import { Routes, Route,useLocation } from "react-router-dom";
 import Project from './Project';
 import Contact from './Contact';
 import { AnimatePresence } from 'framer-motion';
-import React from 'react';
-import useLocalStorage from 'use-local-storage'
+import React, { useState } from 'react';
+
 
 
 function App() {
 
-  const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light')
+  const [theme, setTheme] = useState('theme' ? 'light' : 'dark');
+  const [btnText, setBtnText] = useState('btnText'? "Dark":"Light")
 
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme)
+    setTheme(newTheme);
+    const newBtnText = btnText === "Light"? "Dark": "Light"
+    setBtnText(newBtnText)
   }
 
 
   const location = useLocation();
   return (
     <div className="App" data-theme={theme} >
-      <Header  switchTheme={switchTheme} />
+      <Header  switchTheme={switchTheme} btnText={btnText} />
       <AnimatePresence initial={true} exitBeforeEnter>
         <Routes  location={location} key={location.pathname} >
           <Route path="/" element={<Home />}>
