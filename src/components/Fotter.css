@@ -1,0 +1,202 @@
+.fotter{
+    display: flex;
+    width: 100%;
+    background-color: var(--colour-dark);
+    /* justify-content: center; */
+    /* text-align: center; */
+    flex-direction: column;
+    color: white;
+}
+.fotter_content{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items:flex-start;
+    left: 15%;
+    top: 20%;
+    margin-top: 100px;
+}
+.fotter_content h1{
+    font-size: 5rem;
+    font-weight: 500;
+}
+.fotter_line{
+    display: flex;
+    height: 1px;
+    width: 70%;
+    background-color: rgb(94, 93, 93);
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.fotter_line_bottom{
+    display: none;
+}
+.fotter_content_contact button{
+    height: 70px;
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    border-radius: 30px;
+    border: 1px solid rgb(94, 93, 93);
+    
+}
+.fotter a{
+    text-decoration: none;
+    color: white;
+}
+.fotter_social{
+    display: flex;
+    position: relative;
+    top: 30%;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.version{
+    width: 450px;
+}
+.fotter_social p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(94, 93, 93);
+    margin-bottom: 10px;
+}
+.version h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.social_media_container a{
+    margin-left: 6px;
+    margin-right: 6px;
+
+}
+
+@media screen and (max-width: 800px){
+    .fotter_content h1{
+        font-size: 4rem;
+    }
+   
+    .fotter_content_contact button{
+        height: 70px;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: 500;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+    .fotter_social p{
+        font-size: 0.9rem;
+    }
+    .version h2{
+        font-size: 1.1rem;
+    }
+    .react_icons{
+        font-size: 1.2rem;
+    }
+
+
+}
+@media screen and (max-width: 600px){
+    .fotter_content{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items:center;
+        left: 0%;
+        top: 20%;
+        margin-top: 100px;
+    }
+    .fotter_content h1{
+        font-size: 3.8rem;
+    }
+    .fotter_content_contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .fotter_content_contact button{
+        height: 70px;
+        width: 400px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    .fotter_social{
+        margin-top: 40px;
+        margin-bottom: 50px;
+        align-items: center;
+        justify-content:space-evenly;
+        /* flex-direction: column-reverse; */
+    }
+    .version{
+        width: 300px;
+    }
+    .fotter_social p{
+        font-size: 0.9rem;
+    }
+    .version h2{
+        font-size: 1.1rem;
+    }
+    .react_icons{
+        font-size: 1rem;
+    }
+
+
+}
+@media screen and (max-width: 400px){
+    .fotter_content{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items:center;
+        left: 0%;
+        top: 20%;
+        margin-top: 50px;
+    }
+    .fotter_content h1{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    .fotter_content_contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .fotter_content_contact button{
+        height: 65px;
+        max-width: 340px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    .fotter_line{
+        width: 90%;
+    }
+    .fotter_line_bottom{
+        display: flex;
+    }
+    .fotter_social{
+        margin-top: 10px;
+        margin-bottom: 60px;
+        align-items: center;
+        justify-content:space-evenly;
+        /* flex-direction: column-reverse; */
+    }
+    .version{
+        width: 200px;
+    }
+    .fotter_social p{
+        font-size: 0.8rem;
+    }
+    .version h2{
+        font-size: 1rem;
+    }
+    .react_icons{
+        font-size: 1rem;
+    }
+
+}

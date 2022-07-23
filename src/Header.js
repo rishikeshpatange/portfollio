@@ -1,54 +1,86 @@
 import React, { useState } from 'react';
 import './Header.css';
-import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from 'react-router-dom';
-import DarkModeToggle from "react-dark-mode-toggle";
+import { Spiral} from 'hamburger-react';
+import {motion} from "framer-motion";
 
 
 
-function Header({ switchTheme,btnText}) {
+
+function Header() {
+
+    const [navbar, setNavbar] = useState(false);
     const [showMediaIcons, setShowMediaIcons] = useState(false);
+    const [isopen, setOpen] = useState(false);
+
+    function MenuBtn() {
+        setShowMediaIcons(showMediaIcons => !setShowMediaIcons);
+        setOpen(isopen => !setOpen)
+    }
+
+    const changeBackground = () => {
+        if (window.scrollY >= 80) {
+            setNavbar(true);
+        } else {
+            setNavbar(false);
+        }
+    }
+    window.addEventListener("scroll", changeBackground);
+
+    // animations
+
+    const FadeDown ={
+        initial:{
+            translateY:-200,
+            opacity:0
+        },
+        animate:{
+            translateY:0,
+            opacity:1,
+
+            transition:{
+                duration:0.2,
+            }
+        }
+
+    }
 
 
 
     return (
-        <div className='header'>
+        <motion.div variants={FadeDown} initial="initial" animate="animate" className={navbar ? 'header active' : "header"}>
             <Link to='/'>
-                <h1 className="header__logo">RISHI</h1>
+                <h1 className="header__logo">© R I S H I</h1>
+
             </Link>
-           
-            {/* <div class="form-check form-switch">
-                <input onClick={switchTheme} class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" /> 
-                <label class="form-check-label" for="flexSwitchCheckDefault">{btnText}</label>
-            </div> */}
-            <button className='darkMode' onClick={switchTheme}>{btnText}</button>
-
-            <div className={
+            <div onClick={MenuBtn} className={
                 showMediaIcons ? "header__nav header__navPhone" : "header__nav"}>
-                <Link to='/'>
-                    <div className="header__option">
-                        <h1>HOME</h1>
-                    </div>
-                </Link>
-                <Link to="/project">
-                    <div className="header__option">
-                        <h1>PROJECT</h1>
-                    </div>
-                </Link>
-                <Link to='/contact' >
 
+                <Link to='/'  >
                     <div className="header__option">
-                        <h1>CONTACT</h1>
+                        <h1>Home</h1>
+                    </div>
+                </Link>
+                <Link to='/work'  >
+                    <div className="header__option">
+                        <h1>Work</h1>
                     </div>
                 </Link>
 
+                <Link to='/about' >
+                    <div className="header__option">
+                        <h1>About</h1>
+                    </div>
+                </Link>
             </div>
 
             <div className="hambuger-menu">
-                <a href="#/" onClick={() => setShowMediaIcons(!showMediaIcons)}><GiHamburgerMenu fontSize={'33px'} /></a>
+                <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}><Spiral color='black' size={30}
+                    toggled={isopen} toggle={setOpen} /></a>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
 export default Header
+

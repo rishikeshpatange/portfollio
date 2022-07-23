@@ -1,0 +1,300 @@
+.about{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.about_heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.about_heading h1{
+    font-size: 4.5rem;
+    max-width: 1200px;
+    font-weight: 500;
+}
+.about_heading_line{
+    height: 1px;
+    width: 80%;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    margin-top: 90px;
+    background-color: rgb(212, 212, 212);
+   
+}
+.about_heading_line button{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    position: relative;
+    right: 5%;
+    transition: 1s;
+}
+.globe_image_about{
+    display: flex;
+    max-width: 50px;
+    height: 50px;
+}
+.about_heading_line button:hover{
+    background-color: var(--colour-dark);
+}
+.about_me_content{
+    display: flex;
+    width: 100%;
+    margin-top: 140px;
+    justify-content: space-around;
+}
+.about_me_content p{
+    font-size: 1rem;
+    max-width: 350px;
+    font-weight: 500;
+    line-height: 35px;
+}
+.about_me_content h2{
+    font-size: 1.3rem;
+    max-width: 350px;
+    font-weight: 500;
+    color: rgb(130, 130, 130);
+    margin-top: 40px;
+
+}
+.about_me_content img{
+    max-width: 900px;
+    height: 900px;
+}
+.about_skills{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.about_skills_heading h1{
+    font-size: 2.6rem;
+    font-weight: 500;
+    position: relative;
+    left: 2.8%;
+}
+.skill_container{
+    margin-top: 60px;
+    display: flex;
+}
+@media screen and (max-width: 800px){
+    .about_heading h1{
+        font-size: 3rem;
+        max-width: 600px;
+    }
+    .about_heading_line{
+        height: 1px;
+        width: 80%;
+        margin-top: 90px;
+    }
+    .about_heading_line button{
+        height: 120px;
+        width: 120px;
+        align-items: center;
+        justify-content: center;
+        right: 5%;
+    }
+    .globe_image_about{
+        max-width: 40px;
+        height: 40px;
+    }
+    .about_me_content{
+        margin-top: 140px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_me_content p{
+        font-size: 1rem;
+        max-width: 650px;
+        line-height: 30px;
+    }
+    .about_me_content h2{
+        font-size: 1.1rem;
+        max-width: 350px;
+        margin-top: 9px;
+    
+    }
+    .about_me_content img{
+        width: 700px;
+        height: 850px;
+        margin-top: 50px;
+    }
+
+}
+@media screen and (max-width: 650px){
+    .about_heading h1{
+        font-size: 2.6rem;
+        max-width: 500px;
+    }
+    .about_heading_line{
+        height: 1px;
+        width: 80%;
+        margin-top: 90px;
+    }
+    .about_heading_line button{
+        height: 130px;
+        width: 130px;
+        align-items: center;
+        justify-content: center;
+        right: 5%;
+    }
+    .globe_image_about{
+        max-width: 40px;
+        height: 40px;
+    }
+    .about_me_content{
+        margin-top: 140px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_me_content p{
+        font-size: 1rem;
+        max-width: 500px;
+        line-height: 30px;
+    }
+    .about_me_content h2{
+        font-size: 1rem;
+        max-width: 350px;
+        margin-top: 9px;
+    
+    }
+    .about_me_content img{
+        max-width: 550px;
+        height: 700px;
+        margin-top: 50px;
+    }
+    .about_skills{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .about_skills_heading h1{
+        font-size: 1.6rem;
+        font-weight: 500;
+        position: relative;
+        left: 19%;
+    }
+    .skill_container{
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width:501px){
+    .about_heading h1{
+        font-size: 2.4rem;
+        max-width: 450px;
+    }
+    .about_heading_line button{
+        height: 130px;
+        width: 130px;
+    }
+    .globe_image_about{
+        max-width: 40px;
+        height: 40px;
+    }
+    .about_me_content{
+        margin-top: 100px;
+    }
+    .about_me_content p{
+        font-size: 1em;
+        max-width: 450px;
+        line-height: 28px;
+    }
+    .about_me_content h2{
+        font-size: 1rem;
+        max-width: 350px;
+        margin-top: 9px;
+    
+    }
+    .about_me_content img{
+        max-width: 450px;
+        height: 550px;
+        margin-top: 50px;
+    }
+    .about_skills{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .about_skills_heading h1{
+        font-size: 1.6rem;
+        font-weight: 500;
+        position: relative;
+        left: 7%;
+    }
+    .skill_container{
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width:400px){
+    .about_heading h1{
+        font-size: 2.3rem;
+        max-width: 320px;
+    }
+    .about_heading_line button{
+        height: 120px;
+        width: 120px;
+    }
+    .globe_image_about{
+        max-width: 40px;
+        height: 40px;
+    }
+    .about_me_content{
+        margin-top: 90px;
+    }
+    .about_me_content p{
+        font-size: 1em;
+        max-width: 320px;
+        line-height: 28px;
+    }
+    .about_me_content h2{
+        font-size: 1rem;
+        max-width: 350px;
+        margin-top: 9px;
+    
+    }
+    .about_me_content img{
+        max-width: 320px;
+        height: 450px;
+        margin-top: 50px;
+    }
+    .about_skills{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .about_skills_heading h1{
+        font-size: 1.6rem;
+        font-weight: 500;
+        position: relative;
+        left: 6%;
+    }
+    .skill_container{
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
