@@ -25,21 +25,9 @@
 .home_work_container p{
     margin-top: 20px;
 }
-.home_work_img_box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 550px;
-    height: 350px;
-    background-color: #e4e3e3;
-}
-.home_work_img_box2{
-    background-color: rgb(253, 228, 232);
-}
-
-.home_work_img_box img{
-    max-width: 450px;
-    height: 250px;
+.home_work_container img{
+    max-width: 400px;
+    height: 270px;
 }
 .home_work_btn{
     height: 80px;
@@ -62,12 +50,12 @@
         width: 93%;
     }
     .home_work_img_box{
-        width: 350px;
-        height: 260px;
+        max-width: 320px;
+        height: 240px;
         margin-left: 10px;
         margin-right: 10px;
     }
-    .home_work_img_box img{
+    .home_work_container img{
         max-width: 300px;
         height: 150px;
     }
@@ -86,15 +74,10 @@
     .home_work_content{
         width: 76%;
     }
-    .home_work_img_box{
-        width: 500px;
-        height: 360px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .home_work_img_box img{
+
+    .home_work_container img{
         max-width: 400px;
-        height: 250px;
+        height: 270px;
     }
     
 
@@ -110,15 +93,9 @@
     .home_work_content{
         width: 90%;
     }
-    .home_work_img_box{
-        width: 450px;
-        height: 310px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .home_work_img_box img{
-        max-width: 350px;
-        height: 200px;
+    .home_work_container img{
+        max-width: 400px;
+        height: 300px;
     }
     .home_work_btn{
         height: 60px;
@@ -141,15 +118,9 @@
     .home_work_content{
         width: 90%;
     }
-    .home_work_img_box{
-        width: 310px;
-        height: 260px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .home_work_img_box img{
-        max-width: 280px;
-        height: 160px;
+    .home_work_container img{
+        max-width: 320px;
+        height: 220px;
     }
     .home_work_container p{
         padding-left: 20px;
