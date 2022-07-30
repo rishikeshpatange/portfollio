@@ -63,10 +63,27 @@ function Banner() {
         }
 
     }
+    const BannerFadeUp = {
+        initial: {
+            translateY: 200,
+            opacity: 0
+        },
+        animate: {
+            translateY: 0,
+            opacity: 1,
+
+            transition: {
+                duration: 0.5,
+                delay: 0.6
+            }
+        }
+
+    }
     return (
         <div className='banner'>
 
             <div className="banner_container">
+                <motion.img variants={BannerFadeUp} initial="initial" animate="animate" transition={{delay:1}}  src="/Images/banner.png" className='banner_pic' alt="" />
                 <div className='banner_content'>
                     <motion.span variants={banner_left} initial="initial" animate="animate">
                         <p>Based in Pune</p>
@@ -91,6 +108,7 @@ function Banner() {
             {/* banner phone */}
 
             <div className="banner_container_phone">
+            <motion.img variants={BannerFadeUp} initial="initial" animate="animate" transition={{delay:1}}  src="/Images/banner.png" className='banner_pic' alt="" />
 
                 <motion.div variants={FadeUp} initial="initial" animate="animate" >
 
@@ -107,7 +125,7 @@ function Banner() {
 
                 <div className='banner_content_phone'>
                     <motion.h1 variants={banner_left} initial="initial" animate="animate">Freelance <br />  Designer & Developer</motion.h1>
-                    <motion.img variants={globe_animation} 
+                    <motion.img variants={globe_animation}
                         initial="initial"
                         animate="animate" className='globe_image_phone' src="/Images/globe.png" alt="" />
                 </div>
