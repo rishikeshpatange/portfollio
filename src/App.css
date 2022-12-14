@@ -7,7 +7,10 @@ html{
 }
 
 :root {
-    --text-secondary: rgb(255, 255, 255);
+
+    --text-white: #ffffff;
+    --text-compliment: #20FF1B;
+    --text-secondary: #383838;
     --blue:#2246FF;
     --light-grey:#676767;
     --colour-dark:#1C1D21;
