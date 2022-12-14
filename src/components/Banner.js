@@ -129,7 +129,7 @@ function Banner() {
                     <motion.h1 variants={banner_left} initial="initial" animate="animate">Designer & Developer</motion.h1>
 
                     <div className='phone_basedIn'>
-                        <p>Based in Pune, India</p>
+                        <motion.p variants={banner_left} initial="initial" animate="animate">Based in Pune, India</motion.p>
                     <motion.img variants={globe_animation}
                         initial="initial"
                         animate="animate" className='globe_image_phone' src="/Images/globeDark.png" alt="" />
