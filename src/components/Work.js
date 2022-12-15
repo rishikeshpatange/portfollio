@@ -16,6 +16,7 @@ function Work() {
 
         transition: {
             duration: 0.4,
+            delay:1
         }
     }
 }

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:wght@100;300;400;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:wght@100;300;400;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 html{
   scroll-behavior: smooth;
 }
@@ -7,19 +8,19 @@ html{
 }
 
 :root {
-
-    --text-white: #ffffff;
-    --text-compliment: #20FF1B;
-    --text-secondary: #383838;
+    --marque: #0f0f0f;
+    --text-white: #f9f9f9;
+    --text-compliment: #2246FF;
+    --text-secondary: #0f0f0f;
     --blue:#2246FF;
-    --light-grey:#676767;
+    --light-grey:#202020;
     --colour-dark:#1C1D21;
   }
 
   .App{
     color: var(--colour-dark);
     /* font-family: 'Roboto', sans-serif; */
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
   
 

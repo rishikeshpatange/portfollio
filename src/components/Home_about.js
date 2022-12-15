@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import "./Home_about.css";
-import { motion } from "framer-motion";
 import "aos/dist/aos.css";
 import Aos from 'aos';
 import { Link } from 'react-router-dom';

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
-import { Spiral} from 'hamburger-react';
-import {motion} from "framer-motion";
+import { Spiral } from 'hamburger-react';
+import { motion } from "framer-motion";
 
 
 
@@ -29,17 +29,17 @@ function Header() {
 
     // animations
 
-    const FadeDown ={
-        initial:{
-            translateY:-200,
-            opacity:0
+    const FadeDown = {
+        initial: {
+            translateY: -200,
+            opacity: 0
         },
-        animate:{
-            translateY:0,
-            opacity:1,
+        animate: {
+            translateY: 0,
+            opacity: 1,
 
-            transition:{
-                duration:0.2,
+            transition: {
+                duration: 0.2,
             }
         }
 
@@ -56,11 +56,6 @@ function Header() {
             <div onClick={MenuBtn} className={
                 showMediaIcons ? "header__nav header__navPhone" : "header__nav"}>
 
-                <Link to='/'  >
-                    <div className="header__option">
-                        <h1>Home</h1>
-                    </div>
-                </Link>
                 <Link to='/work'  >
                     <div className="header__option">
                         <h1>Work</h1>

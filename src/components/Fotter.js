@@ -3,13 +3,15 @@ import './Fotter.css';
 import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 function Fotter() {
+    
+
     return (
         <div className='fotter'>
-            <div className="fotter_content">
-                <h1>Let's work <br /> together</h1>
+            <div  className="fotter_content">
+                <h1 >Let's work <br /> together</h1>
                 <span className="fotter_line"></span>
-                <div className="fotter_content_contact">
-                    <button> <a href="mailto:rishikeshpatangesick@gmail.com">rishikeshpatangesick@gmail.com</a> </button>
+                <div  className="fotter_content_contact">
+                    <button > <a href="mailto:rishikeshpatangesick@gmail.com">rishikeshpatangesick@gmail.com</a> </button>
                     <button> <a href="tel:+91-7823069861">+91-7823069861</a></button>
                 </div>
                 <span className="fotter_line fotter_line_bottom"></span>
