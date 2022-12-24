@@ -110,7 +110,7 @@ function About() {
                         <AboutSkillBox
                         num="02"
                         heading="Development"
-                        discription="having a good knowledge of front end development using technologies like React.js, Html, CSS, javascript, firebase."
+                        discription="having a good knowledge of front end development using technologies like Javascript ES6+, React.js, Redux, Node.js, Firebase, Html, Css, Wordpress."
                         />
                         <AboutSkillBox
                         num="03"

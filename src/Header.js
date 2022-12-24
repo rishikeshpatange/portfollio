@@ -56,6 +56,11 @@ function Header() {
             <div onClick={MenuBtn} className={
                 showMediaIcons ? "header__nav header__navPhone" : "header__nav"}>
 
+                <Link to='/'  >
+                    <div className="header__option">
+                        <h1>Home</h1>
+                    </div>
+                </Link>
                 <Link to='/work'  >
                     <div className="header__option">
                         <h1>Work</h1>

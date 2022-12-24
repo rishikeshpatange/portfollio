@@ -85,13 +85,14 @@
         display:flex;
         flex-direction: column;
         position: absolute;
-        height:39rem;
+        height:20rem;
         width: 100%;
         top: 55px;
         z-index: 10;
-        background-color: rgba(255, 255, 255, 0.085);
+        /* background-color: rgba(255, 255, 255, 0.085); */
+        background-color: var(--colour-dark);
         transition: 1s;
-        backdrop-filter: blur(27.5px);
+        /* backdrop-filter: blur(27.5px); */
         transform-origin: top;
 
        
@@ -107,9 +108,9 @@
           margin-right: 5px;
       }
     .header__option h1{
-        font-size: 2.5rem;
-        font-weight: 400;
-        color: var(--text-secondary);
+        font-size: 2.6rem;
+        font-weight: 500;
+        color: var(--text-white);
     }
 
 }
@@ -137,8 +138,8 @@
         max-width: 500px;
         margin-top: 20px;
         margin-left: 20px;
-        font-size: 1.2rem;
-        font-weight: 500;
+        font-size: 1rem;
+        font-weight: 600;
     }
     .hambuger-menu{
         display: block;
